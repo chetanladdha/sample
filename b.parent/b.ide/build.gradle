@@ -1,0 +1,25 @@
+dependencies {
+	compile project(':b')
+	compile "org.eclipse.xtext:org.eclipse.xtext.ide:${xtextVersion}"
+	compile "org.eclipse.xtext:org.eclipse.xtext.xbase.ide:${xtextVersion}"
+}
+//this is an eclipse plugin project
+eclipseClasspath.enabled=false
+cleanEclipseClasspath.enabled=false
+apply plugin: 'application'
+mainClassName = "org.eclipse.xtext.ide.server.ServerLauncher"
+applicationName = 'xtext-server-example'
+
+distributions {
+    main {
+        baseName = 'xtext-server-example'
+    }
+}
+
+distZip {
+    archiveName "xtext-server-example.zip"
+}
+
+distTar {
+    archiveName "xtext-server-example.tar"
+}
