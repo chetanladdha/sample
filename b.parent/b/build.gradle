@@ -1,6 +1,8 @@
 dependencies {
 	compile "org.eclipse.xtext:org.eclipse.xtext:${xtextVersion}"
 	compile "org.eclipse.xtext:org.eclipse.xtext.xbase:${xtextVersion}"
+	compile "a:a:1.0.0-SNAPSHOT"
+	
 }
 configurations {
 	mwe2 {
